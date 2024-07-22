@@ -1,13 +1,175 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/style.css">
-  <title>HTML Starter Boilerplate</title>
-</head>
-<body>
-  <h1>Hello World!</h1>
-  <script src="main.js"></script>
-</body>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Barbershop - Sua barbearia online!</title>
+  </head>
+  <body>
+    <div class="bg-home">
+      <header>
+        <nav class="header-content container">
+          <div class="header-icons" data-aos="fade-down">
+            <a href="#" aria-label="link">
+              <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+            <a href="#" aria-label="link">
+              <i class="fa-brands fa-facebook fa-2x"></i>
+            </a>
+            <a href="#" aria-label="link">
+              <i class="fa-brands fa-tiktok fa-2x"></i>
+            </a>
+          </div>
+          <div class="header-logo" data-aos="fade-up" data-aos-delay="300">
+            <img
+              src="/assets/img/logo.svg"
+              alt="barbershop logo"
+              data-aos="filp-up"
+              data-aos-delay="300"
+              data-aos-duration="1500"
+            />
+          </div>
+          <div data-aos="fade-down">
+            <a
+              href="https://api.whatsapp.com/send?phone=5586988641961&text=Quero%20fazer%20um%20agendamento"
+              class="header-button"
+              target="_blank"
+              >Agendar horário</a
+            >
+          </div>
+        </nav>
+        <main class="hero container" data-aos="fade-up" data-aos-delay="300">
+          <h1>Estilo é um reflexo da sua atitude e sua personalidade.</h1>
+          <p>Horário de funcionamento: 09:00 às 19:00</p>
+          <a
+            href="https://api.whatsapp.com/send?phone=5586988641961&text=Quero%20fazer%20um%20agendamento"
+            class="button-contact"
+            target="_blank"
+            >Agendar horário</a
+          >
+        </main>
+      </header>
+    </div>
+    <section class="about">
+      <div class="container about-content">
+        <div data-aos="zoom-in" data-aos-delay="100">
+          <img src="./assets/img/images.svg" alt="about the barbershop" />
+        </div>
+        <div
+          class="about-description"
+          data-aos="zoom-out-left"
+          data-aos-delay="250"
+        >
+          <h2>Sobre</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+            repellat aspernatur voluptas nemo officia inventore, sunt quas nisi
+            reiciendis quod, blanditiis eaque molestiae quaerat, iste autem hic!
+            Cupiditate, accusamus velit?
+          </p>
+          <p>
+            Horário de funcionamento: <strong>09:00</strong> às
+            <strong>19:00</strong>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="services-content container">
+        <h2>Serviços</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur. Ornare eget pellentesque proin
+          risus. Orci proin morbi vestibulum convallis leo vestibulum mus. Non
+          duis augue eros mattis a quis sem sodales.
+        </p>
+      </div>
+      <section class="haircuts">
+        <div class="haircut" data-aos="fade-up" data-aos-delay="100">
+          <img src="./assets/img/corte1.png" alt="corte cabelo" />
+          <div class="haircut-info">
+            <strong>Corte cabelo</strong>
+            <button>R$ 45,00</button>
+          </div>
+        </div>
+        <div class="haircut" data-aos="fade-up" data-aos-delay="200">
+          <img src="./assets/img/corte2.png" alt="barba completa" />
+          <div class="haircut-info">
+            <strong>Barba completa</strong>
+            <button>R$ 35,00</button>
+          </div>
+        </div>
+        <div class="haircut" data-aos="fade-up" data-aos-delay="300">
+          <img src="./assets/img/corte3.png" alt="cabelo e barba" />
+          <div class="haircut-info">
+            <strong>Cabelo e barba</strong>
+            <button>R$ 70,00</button>
+          </div>
+        </div>
+      </section>
+    </section>
+    <div class="services">
+      <h2>Venha conhecer</h2>
+    </div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.1706713477674!2d-42.80366422586672!3d-5.076070651510574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x78e39e95a7a6973%3A0xb9f3205e282468ea!2sShopping%20Rio%20Poty!5e0!3m2!1spt-BR!2sbr!4v1721652794090!5m2!1spt-BR!2sbr"
+      width="100%"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="barbershop location"
+    ></iframe>
+    <footer class="footer">
+      <div class="footer-icons">
+        <a href="https://www.instagram.com/" aria-label="instagram">
+          <i class="fa-brands fa-instagram fa-2x"></i>
+        </a>
+        <a href="https://www.facebook.com/" aria-label="facebook">
+          <i class="fa-brands fa-facebook fa-2x"></i>
+        </a>
+        <a href="https://www.tiktok.com/" aria-label="tiktok">
+          <i class="fa-brands fa-tiktok fa-2x"></i>
+        </a>
+      </div>
+      <div class="footer-logo">
+        <img src="/assets/img/logo.svg" alt="barbershop logo" />
+      </div>
+      <p>
+        Copyright© <span id="year">2024</span> | Barbershop - Todos os direitos
+        reservados.
+      </p>
+    </footer>
+    <a
+      href="https://api.whatsapp.com/send?phone=5586988641961&text=Quero%20fazer%20um%20agendamento"
+      class="whatsapp-button"
+      target="_blank"
+      aria-label="agende seu horário"
+      data-aos="zoom-in-up"
+      data-aos-delay="400"
+    >
+      <img src="assets/img/whatsapp.svg" alt="whatsapp logo" />
+      <span class="tooltip-text">Agende seu horário</span>
+    </a>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
