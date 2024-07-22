@@ -1,9 +1,9 @@
 {
-  "name": "template-html",
+  "name": "sp-barbershop",
   "version": "1.0.0",
-  "description": "a template for projects in html",
+  "description": "Landing page created through Mobile First using HTML, SASS and an animation library to bring an exceptional user experience for scheduling haircuts to life.",
   "author": "David Almeida <contato.davidalmeida@outlook.com>",
-  "main": "./index.html",
+  "main": "main.js",
   "keywords": [
     "emeraldknight-sp",
     "boilerplate",
@@ -13,11 +13,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/emeraldknight-sp/template-html.git"
+    "url": "https://github.com/emeraldknight-sp/sp-barbershop.git"
   },
   "scripts": {
-    "lint": "eslint js/",
-    "format": "prettier --write \"js/**/*.js\""
+    "lint": "eslint \"/**/*.{html, js}\" --quiet",
+    "format": "prettier --write \"/**/*.{html,js}\""
   },
   "devDependencies": {
     "eslint": "^9.7.0",
