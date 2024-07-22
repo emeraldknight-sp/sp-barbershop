@@ -1,86 +1,3 @@
-header {
-  width: 100%;
-}
-
-.header-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.header-content i {
-  margin-top: 1rem;
-  font-size: 2.25rem;
-}
-
-i {
-  color: #ffffff;
-}
-
-.header-icons {
-  display: flex;
-  gap: 0.875rem;
-}
-
-.header-icons a:hover i {
-  animation: translateY 0.8s infinite alternate;
-  color: #d34040;
-}
-
-@keyframes translateY {
-  from {
-    transform: translateY(0) scale(1);
-  }
-  to {
-    transform: translateY(-8px) scale(1.1);
-  }
-}
-.header-button {
-  display: none;
-  border: 1px solid #ffffff;
-  padding: 0.5rem 1.5rem;
-  border-radius: 0.25rem;
-  color: #ffffff;
-  background-color: transparent;
-  transition: background-color 0.8s;
-}
-
-.header-button:hover {
-  border: 1px solid #d34040;
-  background-color: #d34040;
-}
-
-.header-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 0.875rem;
-}
-
-.header-logo img {
-  width: 160px;
-  margin-top: 1rem;
-}
-
-@media screen and (min-width: 768px) {
-  .header-content {
-    width: 100%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .header-content i {
-    margin: 0;
-    font-size: 2rem;
-  }
-  .header-logo img {
-    width: 100%;
-    margin: 0;
-  }
-  .header-button {
-    display: unset;
-  }
-}
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -95,7 +12,8 @@ i {
   content: "";
   display: block;
   position: absolute;
-  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../../assets/img/bg.svg");
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e),
+    url("../../assets/img/bg.svg");
   left: 0;
   top: 0;
   width: 100%;
@@ -108,33 +26,35 @@ i {
 }
 
 .hero {
-  color: #ffffff;
+  color: $white-normal;
   min-height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 1rem;
-}
-.hero h1 {
-  text-align: center;
-  line-height: 150%;
-  max-width: 700px;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  padding: 0 1rem;
-  width: 100%;
-}
-.hero p {
-  font-size: 1rem;
-  text-align: center;
-  margin: 1rem 0;
+
+  h1 {
+    text-align: center;
+    line-height: 150%;
+    max-width: 700px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 0 1rem;
+    width: 100%;
+  }
+
+  p {
+    font-size: 1rem;
+    text-align: center;
+    margin: 1rem 0;
+  }
 }
 
 .button-contact {
   padding: 1rem 1.875rem;
-  color: #ffffff;
-  background-color: #d94140;
+  color: $white-normal;
+  background-color: $red-normal;
   border: 0;
   font-size: 1.125rem;
   font-weight: 600;
@@ -153,9 +73,10 @@ i {
     transform: scale(1.07);
   }
 }
+
 .about {
-  background-color: #06121e;
-  color: #ffffff;
+  background-color: $primary-normal;
+  color: $white-normal;
   overflow: hidden;
 }
 
@@ -166,27 +87,31 @@ i {
   justify-content: center;
   gap: 1rem;
   padding: 2rem 1rem 4rem;
-}
-.about-content img {
-  max-width: 570px;
+
+  img {
+    max-width: 570px;
+  }
 }
 
 .about-content div {
   flex: 1;
 }
 
-.about-description h2 {
-  font-size: 2.25rem;
-  margin-bottom: 1.5rem;
-}
-.about-description p {
-  margin-bottom: 1rem;
-  line-height: 150%;
+.about-description {
+  h2 {
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+    line-height: 150%;
+  }
 }
 
 .services {
-  background-color: #ffffff;
-  color: #232224;
+  background-color: $white-normal;
+  color: $black-normal;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -221,15 +146,16 @@ i {
   flex: 1;
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
+  background-color: $white-normal;
   border-radius: 8px;
   box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
   overflow: hidden;
-}
-.haircut img {
-  width: 100%;
-  max-width: 740px;
-  transition: transform 0.3s;
+
+  img {
+    width: 100%;
+    max-width: 740px;
+    transition: transform 0.3s;
+  }
 }
 
 .haircut img:hover {
@@ -244,13 +170,13 @@ i {
   align-items: center;
   font-size: 1.125rem;
   padding: 1.25rem 0.875rem;
-  background-color: #ffffff;
+  background-color: $white-normal;
   z-index: 99;
 }
 
 .haircut-info button {
-  color: #ffffff;
-  background-color: #d94140;
+  color: $white-normal;
+  background-color: $red-normal;
   font-size: 0.875rem;
   padding: 8px 20px;
   border-radius: 8px;
@@ -265,13 +191,13 @@ i {
   align-items: center;
   gap: 1.5rem;
   padding: 54px 0;
-  color: #ffffff;
+  color: $white-normal;
 }
 
 .footer-icons {
   display: flex;
   gap: 0.5rem;
-  color: #ffffff;
+  color: $white-normal;
 }
 
 .whatsapp-button {
@@ -279,13 +205,15 @@ i {
   bottom: 14px;
   right: 24px;
   z-index: 99;
-}
-.whatsapp-button img {
-  max-width: 65px;
-  transition: transform 1.4s;
-}
-.whatsapp-button img:hover {
-  transform: scale(1.1);
+
+  img {
+    max-width: 65px;
+    transition: transform 1.4s;
+  }
+
+  img:hover {
+    transform: scale(1.1);
+  }
 }
 
 .whatsapp-button .tooltip-text {
@@ -297,8 +225,8 @@ i {
   padding: 0.5rem;
   border-radius: 8px;
   text-align: center;
-  background-color: #232224;
-  color: #ffffff;
+  background-color: $black-normal;
+  color: $white-normal;
   opacity: 0;
   transition: opacity 0.3s;
 }
@@ -313,65 +241,29 @@ i {
     font-size: 2.25rem;
   }
 }
+
 @media screen and (min-width: 768px) {
   .hero {
     min-height: 80vh;
+
+    h1 {
+      font-size: 3rem;
+    }
   }
-  .hero h1 {
-    font-size: 3rem;
-  }
+
   .about-content {
     flex-direction: row;
   }
+
   .haircuts {
     flex-direction: row;
   }
+
   .haircut img {
     max-width: 354px;
   }
+
   .whatsapp-button img {
     max-width: 75px;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: 0;
-}
-
-body {
-  font-family: "Sora", sans-serif;
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  background-color: #06121e;
-}
-
-button {
-  font-family: "Sora", sans-serif;
-  cursor: pointer;
-}
-
-img,
-svg {
-  width: 100%;
-}
-
-a {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-::-webkit-scrollbar-track {
-  background-color: #090d11;
-}
-
-::-webkit-scrollbar {
-  width: 6px;
-  background: #ffffff;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #d94140;
-}/*# sourceMappingURL=style.css.map */
